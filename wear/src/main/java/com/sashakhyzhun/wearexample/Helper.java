@@ -10,22 +10,22 @@ import android.support.wearable.activity.ConfirmationActivity;
 import java.util.ArrayList;
 import java.util.Map;
 
-public class Helper {
+class Helper {
 
-    public static String saveNote(Note note, Context context) {
+    static String saveNote(Note note, Context context) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         String id = String.valueOf(System.currentTimeMillis());
         editor.putString(id, note.getTitle());
 
-        editor.commit();
+        editor.apply();
 
         return id;
     }
 
 
-    public static ArrayList<Note> getAllNotes(Context context) {
+    static ArrayList<Note> getAllNotes(Context context) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
 
         ArrayList<Note> notes = new ArrayList<>();
@@ -35,7 +35,7 @@ public class Helper {
             String savedData = (String) entry.getValue();
 
             if (savedData != null) {
-                Note note = new Note(entry.getKey(), savedData);
+                Note note = new Note(savedData, entry.getKey());
                 notes.add(note);
             }
         }
@@ -44,12 +44,12 @@ public class Helper {
     }
 
 
-    public static void removeNote(String id, Context context) {
+    static void removeNote(String id, Context context) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         editor.remove(id);
-        editor.commit();
+        editor.apply();
     }
 
 

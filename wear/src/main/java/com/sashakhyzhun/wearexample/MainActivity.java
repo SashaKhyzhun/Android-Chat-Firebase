@@ -49,6 +49,7 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
 
     private void updateUI() {
         ArrayList<Note> notes = Helper.getAllNotes(this);
+        // TODO: 06.10.2016 change this empty fields for new data? maybe?
         notes.add(0, new Note("", ""));
         listView.setAdapter(new ListViewAdapter(this, 0, notes));
 
@@ -57,24 +58,23 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
     private void displaySpeechScreen() {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        startActivityForResult(intent, 228);
+        startActivityForResult(intent, 1001);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == 228 && requestCode == RESULT_OK) {
-            List<String> results = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+        if (resultCode == RESULT_OK) {
+            if (requestCode == 1001) {
+                List<String> results = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
 
-            String message = results.get(0);
+                String message = results.get(0);
+                String id = String.valueOf(System.currentTimeMillis());
+                Note note = new Note(message, id);
+                Helper.saveNote(note, this);
+                Helper.displayConfirmation("Note saved", this);
 
-            Note note = new Note(null, message);
-
-            Helper.saveNote(note, this);
-
-            Helper.displayConfirmation("Note saved", this);
-
-            updateUI();
-
+                updateUI();
+            }
         }
     }
 }
