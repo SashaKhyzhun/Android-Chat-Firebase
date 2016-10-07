@@ -49,10 +49,8 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
 
     private void updateUI() {
         ArrayList<Note> notes = Helper.getAllNotes(this);
-        // TODO: 06.10.2016 change this empty fields for new data? maybe?
         notes.add(0, new Note("", ""));
         listView.setAdapter(new ListViewAdapter(this, 0, notes));
-
     }
 
     private void displaySpeechScreen() {

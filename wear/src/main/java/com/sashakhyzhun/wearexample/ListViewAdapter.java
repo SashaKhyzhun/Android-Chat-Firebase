@@ -23,7 +23,7 @@ public class ListViewAdapter extends ArrayAdapter<Note> {
         if (position == 0) {
             return LayoutInflater.from(this.getContext()).inflate(R.layout.new_note, parent, false);
         }
-        convertView = LayoutInflater.from(this.getContext()).inflate(android.R.layout.simple_list_item_1, parent, false);
+        convertView = LayoutInflater.from(this.getContext()).inflate(R.layout.custom_list_view, parent, false);
 
         Note note = getItem(position);
 
