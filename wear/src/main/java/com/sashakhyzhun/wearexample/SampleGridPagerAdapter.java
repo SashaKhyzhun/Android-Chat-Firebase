@@ -1,3 +1,4 @@
+/*
 package com.sashakhyzhun.wearexample;
 
 import android.app.Fragment;
@@ -24,37 +25,36 @@ class SampleGridPagerAdapter extends FragmentGridPagerAdapter {
         mPages = new ArrayList<>();
 
         SimpleRow row1 = new SimpleRow();
-        row1.addPages(new SimplePage("Title1", "Text1", R.drawable.ic_add_alert_white_18dp, R.mipmap.ic_launcher));
-        row1.addPages(new SimplePage("Title2", "Text2", R.drawable.ic_close_white, R.mipmap.ic_launcher));
+        row1.addPages(new SimplePage("MainFragment", "ListView", R.drawable.ic_mic_white_18dp, R.mipmap.ic_launcher));
+        row1.addPages(new SimplePage("SettingsFragment", "Color/Size", R.drawable.ic_add_alert_white_18dp, R.mipmap.ic_launcher));
+        row1.addPages(new SimplePage("NotificationFragment", "On/Off", R.drawable.ic_close_white, R.mipmap.ic_launcher));
 
-        SimpleRow row2 = new SimpleRow();
-        row2.addPages(new SimplePage("Title3", "Text3", R.drawable.ic_mic_white_18dp, R.mipmap.ic_launcher));
-
-        SimpleRow row3 = new SimpleRow();
-        row3.addPages(new SimplePage("Title4", "Text4", R.drawable.ic_add_alert_white_18dp, R.mipmap.ic_launcher));
-
-        SimpleRow row4 = new SimpleRow();
-        row4.addPages(new SimplePage("Title5", "Text5", R.drawable.ic_close_white, R.mipmap.ic_launcher));
-        row4.addPages(new SimplePage("Title6", "Text6", R.drawable.ic_mic_white_18dp, R.mipmap.ic_launcher));
+//        SimpleRow row2 = new SimpleRow();
+//        row2.addPages(new SimplePage("Title3", "Text3", R.drawable.ic_mic_white_18dp, R.mipmap.ic_launcher));
+//
+//        SimpleRow row3 = new SimpleRow();
+//        row3.addPages(new SimplePage("Title4", "Text4", R.drawable.ic_add_alert_white_18dp, R.mipmap.ic_launcher));
+//
+//        SimpleRow row4 = new SimpleRow();
+//        row4.addPages(new SimplePage("Title5", "Text5", R.drawable.ic_close_white, R.mipmap.ic_launcher));
+//        row4.addPages(new SimplePage("Title6", "Text6", R.drawable.ic_mic_white_18dp, R.mipmap.ic_launcher));
 
         mPages.add(row1);
-        mPages.add(row2);
-        mPages.add(row3);
-        mPages.add(row4);
+//        mPages.add(row2);
+//        mPages.add(row3);
+//        mPages.add(row4);
     }
 
     @Override
     public Fragment getFragment(int row, int col) {
-        SimplePage page = ((SimpleRow)mPages.get(row)).getPages(col);
-        CardFragment fragment = CardFragment.create(page.mTitle, page.mText, page.mIconId);
-        return fragment;
+        SimplePage page = mPages.get(row).getPages(col);
+        return CardFragment.create(page.mTitle, page.mText, page.mIconId);
     }
 
     @Override
     public Drawable getBackgroundForPage(int row, int col) {
-        SimplePage page = ((SimpleRow)mPages.get(row)).getPages(col);
-        Drawable d = mContext.getResources().getDrawable(page.mBackgroundId);
-        return d;
+        SimplePage page = mPages.get(row).getPages(col);
+        return mContext.getResources().getDrawable(page.mBackgroundId);
     }
 
     @Override
@@ -66,4 +66,4 @@ class SampleGridPagerAdapter extends FragmentGridPagerAdapter {
     public int getColumnCount(int row) {
         return mPages.get(row).size();
     }
-}
+}*/

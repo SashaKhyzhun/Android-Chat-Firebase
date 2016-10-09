@@ -1,3 +1,4 @@
+/*
 package com.sashakhyzhun.wearexample;
 
 import java.util.ArrayList;
@@ -17,4 +18,4 @@ class SimpleRow {
     int size() {
         return mPagesRow.size();
     }
-}
+}*/

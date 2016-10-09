@@ -23,7 +23,7 @@ public class DeleteActivity extends WearableActivity implements DelayedConfirmat
         delayedConfirmationView = (DelayedConfirmationView)findViewById(R.id.delayed_confirm);
 
         delayedConfirmationView.setListener(this);
-        delayedConfirmationView.setTotalTimeMs(3000);
+        delayedConfirmationView.setTotalTimeMs(2000);
         delayedConfirmationView.start();
 
     }

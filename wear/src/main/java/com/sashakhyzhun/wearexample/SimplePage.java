@@ -1,3 +1,4 @@
+/*
 package com.sashakhyzhun.wearexample;
 
 class SimplePage {
@@ -14,4 +15,4 @@ class SimplePage {
         this.mBackgroundId = backgroundId;
     }
 
-}
+}*/
