@@ -1,16 +1,16 @@
 package com.sashakhyzhun.wearexample;
 
-public class Note {
+class Note {
 
     private String title = "";
     private String id = "";
 
-    public Note(String title, String id) {
+    Note(String title, String id) {
         this.title = title;
         this.id = id;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return title;
     }
 

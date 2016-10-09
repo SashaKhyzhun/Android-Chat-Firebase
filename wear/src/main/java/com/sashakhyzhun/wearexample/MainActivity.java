@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.support.wearable.view.GridViewPager;
 import android.support.wearable.view.WatchViewStub;
 import android.view.Gravity;
 import android.view.View;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends Activity implements ListView.OnItemClickListener {
+public class MainActivity extends Activity /*implements ListView.OnItemClickListener*/ {
 
     private ListView listView;
 
@@ -23,19 +24,20 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = (ListView) findViewById(R.id.listView);
-        listView.setOnItemClickListener(this);
-        updateUI();
+        final GridViewPager mGridPager = (GridViewPager) findViewById(R.id.pager);
+        mGridPager.setAdapter(new SampleGridPagerAdapter(this, getFragmentManager()));
+
+
     }
 
 
     @Override
     protected void onResume() {
         super.onResume();
-        updateUI();
+        //updateUI();
     }
 
-    @Override
+    /*@Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if (position == 0) {
             displaySpeechScreen();
@@ -45,9 +47,9 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
             intent.putExtra("id", note.getId());
             startActivity(intent);
         }
-    }
+    }*/
 
-    private void updateUI() {
+    /*private void updateUI() {
         ArrayList<Note> notes = Helper.getAllNotes(this);
         notes.add(0, new Note("", ""));
         listView.setAdapter(new ListViewAdapter(this, 0, notes));
@@ -74,5 +76,5 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
                 updateUI();
             }
         }
-    }
+    }*/
 }
