@@ -10,10 +10,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class ListViewAdapter extends ArrayAdapter<Note> {
+class ListViewAdapter extends ArrayAdapter<Note> {
 
 
-    public ListViewAdapter(Context context, int resource, List<Note> objects) {
+    ListViewAdapter(Context context, int resource, List<Note> objects) {
         super(context, resource, objects);
     }
 
@@ -28,6 +28,7 @@ public class ListViewAdapter extends ArrayAdapter<Note> {
         Note note = getItem(position);
 
         TextView title = (TextView) convertView.findViewById(android.R.id.text1);
+
         title.setText(note.getTitle());
         return convertView;
     }

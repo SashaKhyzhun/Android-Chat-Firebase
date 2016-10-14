@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
-import android.support.wearable.view.GridViewPager;
-import android.support.wearable.view.WatchViewStub;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,9 +22,6 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-//        final GridViewPager mGridPager = (GridViewPager) findViewById(R.id.pager);
-//        mGridPager.setAdapter(new SampleGridPagerAdapter(this, getFragmentManager()));
 
         listView = (ListView) findViewById(R.id.listView);
         listView.setOnItemClickListener(this);
@@ -81,4 +76,6 @@ public class MainActivity extends Activity implements ListView.OnItemClickListen
             }
         }
     }
+
+
 }
