@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "183931502358",
+    "firebase_url": "https://chatikfirebase.firebaseio.com",
+    "project_id": "chatikfirebase",
+    "storage_bucket": "chatikfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183931502358:android:f5137e4a1da52e76",
+        "android_client_info": {
+          "package_name": "com.sashakhyzhun.tutorials.chatikfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183931502358-stote5f25rh70nqjtgnpeqa5mancnd7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+        "current_key": ""
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
