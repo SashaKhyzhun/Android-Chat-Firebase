@@ -17,7 +17,7 @@ public class Conversion extends Activity {
 		}
 
 		while (valor > 0) {
-			offset = (long) (valor % 2);
+			offset = valor % 2;
 			valor = valor / 2;
 			sb.insert(0, offset);
 		}
@@ -38,7 +38,7 @@ public class Conversion extends Activity {
 		}
 
 		while (valor > 0) {
-			offset = (long) (valor % 8);
+			offset = valor % 8;
 			valor = valor / 8;
 			sb.insert(0, offset);
 		}
@@ -60,7 +60,7 @@ public class Conversion extends Activity {
 		}
 
 		while (valor > 0) {
-			offset = (long) (valor % 16);
+			offset = valor % 16;
 			valor = valor / 16;
 			sb.insert(0, hex[(int) offset]);
 		}
