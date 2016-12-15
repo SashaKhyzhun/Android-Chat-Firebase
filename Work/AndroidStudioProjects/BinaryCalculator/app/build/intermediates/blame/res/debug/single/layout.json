@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator/app/src/main/res/layout/activity_main.xml"
+    }
+]

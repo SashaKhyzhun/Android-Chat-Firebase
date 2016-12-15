@@ -1,0 +1,7 @@
+#Thu Dec 15 23:52:43 EET 2016
+base.0=/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_16022bf0c7996ff50b73e0d3b5808ad0bc9874fc
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6ec00c329d560b031b8eba5640aef7b87b115770/classes.dex
+base.1=/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6ec00c329d560b031b8eba5640aef7b87b115770
+file.0=/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_16022bf0c7996ff50b73e0d3b5808ad0bc9874fc/classes.dex

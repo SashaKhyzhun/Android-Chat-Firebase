@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/libs/GoogleAdMobAdsSdk-6.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6262c554ef5744538d526465aa73704810705734">
+        <dex dex="/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/transforms/dex/debug/folders/1000/2/GoogleAdMobAdsSdk-6.4.1_90125fa222be63d1188e253148f3c7992649b80a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="db6c65c641444ba0c99fc2af599b22a27aa99f21">
+        <dex dex="/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_16022bf0c7996ff50b73e0d3b5808ad0bc9874fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="129e7eccd24d41fd9ff795c0996f1019e27cd7df">
+        <dex dex="/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6ec00c329d560b031b8eba5640aef7b87b115770/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/SashaKhyzhun/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_8d23f6cb17c82d79e9eb493a9cabb21f5ae58538/classes.dex" />
+    </item>
+
+</items>

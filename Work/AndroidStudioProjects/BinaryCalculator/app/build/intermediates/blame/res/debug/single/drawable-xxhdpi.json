@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher.png",
+        "source": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_back.png",
+        "source": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator/app/src/main/res/drawable-xxhdpi/ic_action_back.png"
+    },
+    {
+        "merged": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher.png",
+        "source": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_back.png",
+        "source": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/src/main/res/drawable-xxhdpi/ic_action_back.png"
+    },
+    {
+        "merged": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator/app/build/intermediates/res/merged/debug/drawable-xxhdpi/calc.png",
+        "source": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator/app/src/main/res/drawable-xxhdpi/calc.png"
+    },
+    {
+        "merged": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/build/intermediates/res/merged/debug/drawable-xxhdpi/calc.png",
+        "source": "/Users/SashaKhyzhun/Work/AndroidStudioProjects/BinaryCalculator-master/app/src/main/res/drawable-xxhdpi/calc.png"
+    }
+]
